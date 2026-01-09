@@ -3,12 +3,12 @@ import { getFirestore, collection, getDocs, doc, setDoc, deleteDoc } from 'fireb
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB-GD6bN23ZZ_0lhQHde-Mi2Ilx44yOkt4",
-  authDomain: "informatica2-9bdb7.firebaseapp.com",
-  projectId: "informatica2-9bdb7",
-  storageBucket: "informatica2-9bdb7.firebasestorage.app",
-  messagingSenderId: "35262820507",
-  appId: "1:35262820507:web:9931df98fb08df6a26d63e"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 
